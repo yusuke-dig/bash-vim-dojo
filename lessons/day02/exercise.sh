@@ -16,7 +16,7 @@
 # ヒント: カーソルを "Y" に移動して "cw" (change word) か
 #         "x" を連打して消してから "i" で入力
 # ===========================================================
-NAME="YOUR_NAME"
+NAME="Yusuke"
 
 # ===========================================================
 # Task 2: if文を完成させる
@@ -25,7 +25,7 @@ NAME="YOUR_NAME"
 # ゴール: score が 60 以上なら "合格" と表示する
 # ===========================================================
 score=75
-if [ $score OPERATOR 60 ]; then
+if [ $score -ge 60 ]; then
   echo "合格"
 else
   echo "不合格"
@@ -43,6 +43,8 @@ fi
 grade=82
 if [ $grade -ge 90 ]; then
   echo "優秀"
+elif [ $grade -ge 60 ] && [ $grade -le 89 ]; then
+ echo "合格"
 else
   echo "不合格"
 fi
@@ -53,7 +55,6 @@ fi
 # "余計な行" と書かれた行を dd で削除してください
 # ===========================================================
 weather="sunny"
-echo "余計な行"  # この行を dd で削除する
 if [ "$weather" = "sunny" ]; then
   echo "晴れです"
 else
@@ -67,3 +68,9 @@ fi
 # 下の # YOUR CODE HERE の部分を埋めてください
 # ===========================================================
 # YOUR CODE HERE
+
+day="Monday"
+
+if [ "$day" = "Monday" ]; then
+  echo "週の始まり"
+fi
