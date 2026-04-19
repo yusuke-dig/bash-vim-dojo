@@ -4,6 +4,8 @@
 
 毎日15分でVimとBashを組み合わせて学ぶ練習プロジェクト。
 
+> **セッション開始時に必ず `MEMORY.md` を読み、現在の進捗を確認すること。**
+
 ## 「今日の分を作って」と言われたら
 
 以下の手順で必ずファイルを生成すること：
@@ -17,9 +19,10 @@
 4. `progress.md` の最終レッスン日と完了済みDayを更新する
 5. `README.md` の「進捗ログ」テーブルに1行追加する（日付・テーマを記録）
 6. `../dev-learning-logs/` に学習ログを書く（下記「dev-learning-logs 連携」参照）
-7. 以下のコマンドでコミットする（必ず実行すること）：
+7. `MEMORY.md` の進捗テーブルを更新する（完了Dayを ✅、次のDayを ⬜ 未着手 → 表示）
+8. 以下のコマンドでコミットする（必ず実行すること）：
    ```
-   git add lessons/dayNN/ progress.md README.md
+   git add lessons/dayNN/ progress.md README.md MEMORY.md
    git commit -m "Day NN: [Vimテーマ] × [Bashテーマ]"
    ```
 
