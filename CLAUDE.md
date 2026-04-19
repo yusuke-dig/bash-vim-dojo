@@ -15,9 +15,10 @@
    - `exercise.sh` — 実行可能な演習ファイル（コメントで手順を誘導）
    - `test.sh` — 自動採点スクリプト（bash test.sh で結果確認）
 4. `progress.md` の最終レッスン日と完了済みDayを更新する
-5. 以下のコマンドでコミットする（必ず実行すること）：
+5. `README.md` の「進捗ログ」テーブルに1行追加する（日付・テーマを記録）
+6. 以下のコマンドでコミットする（必ず実行すること）：
    ```
-   git add lessons/dayNN/ progress.md
+   git add lessons/dayNN/ progress.md README.md
    git commit -m "Day NN: [Vimテーマ] × [Bashテーマ]"
    ```
 
