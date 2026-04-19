@@ -70,9 +70,15 @@
 - Vimで開いて編集することを前提にした構造にする
 
 ### test.sh の規約
-- `bash test.sh` で採点できる
+- プロジェクトルートからでも実行できること（`bash lessons/dayNN/test.sh`）
+  - スクリプト冒頭に以下を必ず入れる：
+    ```bash
+    DIR="$(cd "$(dirname "$0")" && pwd)"
+    cd "$DIR"
+    ```
 - PASSEDとFAILEDを明確に表示
 - 最後にスコア（例: 3/5 passed）を表示
+- grep でコメント行を誤検知しないよう `grep -v '^#'` でコメント行を除外する
 
 ## カリキュラムの哲学
 
