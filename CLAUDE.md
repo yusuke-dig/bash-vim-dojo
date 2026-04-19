@@ -16,10 +16,31 @@
    - `test.sh` — 自動採点スクリプト（bash test.sh で結果確認）
 4. `progress.md` の最終レッスン日と完了済みDayを更新する
 5. `README.md` の「進捗ログ」テーブルに1行追加する（日付・テーマを記録）
-6. 以下のコマンドでコミットする（必ず実行すること）：
+6. `../dev-learning-logs/` に学習ログを書く（下記「dev-learning-logs 連携」参照）
+7. 以下のコマンドでコミットする（必ず実行すること）：
    ```
    git add lessons/dayNN/ progress.md README.md
    git commit -m "Day NN: [Vimテーマ] × [Bashテーマ]"
+   ```
+
+## dev-learning-logs 連携
+
+レッスン生成と同時に `../dev-learning-logs/` にも学習ログを書くこと。
+
+### 手順
+
+1. `../dev-learning-logs/logs/bash-vim/YYYY-MM-DD.md` を作成する
+   - YYYY-MM-DD は今日の日付
+   - 記法・粒度は `../dev-learning-logs/CLAUDE.md` の規約に従う
+   - 構成: 今日の作業内容 / 今日学んだこと（Vim・Bash・組み合わせの観点別）
+2. `../dev-learning-logs/README.md` の `## Bash & Vim` セクションに1行追加する
+   - 形式: `- [YYYY-MM-DD](logs/bash-vim/YYYY-MM-DD.md) 今日のトピック要約`
+3. `../dev-learning-logs/` でコミットする：
+   ```
+   cd ../dev-learning-logs
+   git add logs/bash-vim/YYYY-MM-DD.md README.md
+   git commit -m "Bash & Vim Day NN: [Vimテーマ] × [Bashテーマ]"
+   cd -
    ```
 
 ## レッスンファイルの規約
