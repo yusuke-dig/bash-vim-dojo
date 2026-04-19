@@ -1,6 +1,9 @@
 #!/bin/bash
 # Day 02 自動採点スクリプト
-# 使い方: bash test.sh
+# 使い方: bash lessons/day02/test.sh
+
+DIR="$(cd "$(dirname "$0")" && pwd)"
+cd "$DIR"
 
 PASS=0
 FAIL=0
@@ -25,8 +28,8 @@ else
   fi
 fi
 
-# Task 2: OPERATOR が正しい演算子に変わっているか
-if echo "$source_content" | grep -q 'OPERATOR'; then
+# Task 2: OPERATOR が正しい演算子に変わっているか（コメント行を除外）
+if grep -v '^#' exercise.sh | grep -q 'OPERATOR'; then
   echo "[FAILED] Task 2: 比較演算子がまだ OPERATOR のままです"
   FAIL=$((FAIL + 1))
 else
@@ -86,8 +89,8 @@ else
   FAIL=$((FAIL + 1))
 fi
 
-# Task 4: "余計な行" の echo が削除されているか
-if grep -q '余計な行' exercise.sh; then
+# Task 4: "余計な行" の echo が削除されているか（コメント行を除外）
+if grep -v '^#' exercise.sh | grep -q '余計な行'; then
   echo "[FAILED] Task 4: '余計な行' の echo がまだ残っています（dd で削除してください）"
   FAIL=$((FAIL + 1))
 else
