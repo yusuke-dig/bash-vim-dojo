@@ -16,7 +16,7 @@
 # 期待する出力例: "こんにちは、Alice！"
 
 # YOUR CODE HERE: name変数に自分の名前を代入する
-name=""
+name="Yusuke"
 
 echo "こんにちは、${name}！"
 
@@ -27,8 +27,8 @@ echo "こんにちは、${name}！"
 # 期待する出力例: "10 + 32 = 42"
 
 # YOUR CODE HERE: num_a に 10, num_b に 32 を代入する
-num_a=0
-num_b=0
+num_a=10
+num_b=32
 
 result=$((num_a + num_b))
 echo "${num_a} + ${num_b} = ${result}"
@@ -41,7 +41,7 @@ echo "${num_a} + ${num_b} = ${result}"
 # ヒント: $(date +%Y-%m-%d) で今日の日付が取れる
 
 # YOUR CODE HERE: today変数に今日の日付を代入する
-today=""
+today="$(date +%Y-%m-%d)"
 
 echo "今日は ${today} です"
 
@@ -52,6 +52,6 @@ echo "今日は ${today} です"
 # 期待する出力例: "私の名前はAliceです。好きな数は42です。"
 
 # YOUR CODE HERE: favorite_number 変数に好きな数を代入する
-favorite_number=0
+favorite_number=10
 
 echo "私の名前は${name}です。好きな数は${favorite_number}です。"
