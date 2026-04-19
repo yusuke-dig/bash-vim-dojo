@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p *)",
+      "Bash(chmod +x *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(bash lessons/*)",
+      "Bash(ls *)",
+      "Bash(ls -la *)",
+      "Bash(cd *)",
+      "Bash(cat *)",
+      "Bash(pwd)",
+      "Bash(echo *)"
+    ],
+    "deny": [
+      "Bash(rm -rf *)"
+    ],
+    "additionalDirectories": [
+      "../dev-learning-logs"
+    ]
+  }
+}
