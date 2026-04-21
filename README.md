@@ -21,6 +21,7 @@ bash lessons/day01/test.sh
 |-----|------|--------|
 | 01 | 2026-04-19 | Vim移動 × Bash変数・echo |
 | 02 | 2026-04-20 | Vim挿入・削除 × Bashのif文 |
+| 03 | 2026-04-21 | Vim検索（/, n, N, *） × Bashのfor文・seq |
 
 ## カリキュラム
 
