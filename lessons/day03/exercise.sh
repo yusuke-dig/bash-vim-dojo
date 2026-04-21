@@ -18,7 +18,7 @@
 echo "=== Task 1 ==="
 for i in $(seq 1 5); do
   # YOUR CODE HERE
-  echo "PLACEHOLDER_1"
+  echo "$i"
 done
 
 # -------------------------------------------------------
@@ -32,7 +32,7 @@ echo "=== Task 2 ==="
 fruits="apple banana cherry"
 for fruit in $fruits; do
   # YOUR CODE HERE
-  echo "PLACEHOLDER_2"
+  echo "I like $fruit"
 done
 
 # -------------------------------------------------------
@@ -48,7 +48,7 @@ done
 echo "=== Task 3 ==="
 for i in $(seq 0 2 10); do
   # YOUR CODE HERE
-  echo "PLACEHOLDER_3"
+  echo "$i"
 done
 
 # -------------------------------------------------------
@@ -61,7 +61,7 @@ done
 echo "=== Task 4 ==="
 for n in $(seq 1 3); do
   # YOUR CODE HERE
-  echo "PLACEHOLDER_4"
+  echo "Loop $n: done"
 done
 
 # -------------------------------------------------------
@@ -72,8 +72,9 @@ done
 #   Step 2
 #   Step 3
 #   Step 4
+
 echo "=== Task 5 ==="
 for step in {1..4}; do
   # YOUR CODE HERE
-  echo "PLACEHOLDER_5"
+  echo "Step $step"
 done
