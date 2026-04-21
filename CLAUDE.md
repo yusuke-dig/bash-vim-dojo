@@ -18,17 +18,18 @@
    - `test.sh` — 自動採点スクリプト（bash test.sh で結果確認）
 4. `progress.md` の最終レッスン日と完了済みDayを更新する
 5. `README.md` の「進捗ログ」テーブルに1行追加する（日付・テーマを記録）
-6. `../dev-learning-logs/` に学習ログを書く（下記「dev-learning-logs 連携」参照）
-7. `MEMORY.md` の進捗テーブルを更新する（完了Dayを ✅、次のDayを ⬜ 未着手 → 表示）
-8. 以下のコマンドでコミットする（必ず実行すること）：
+6. `MEMORY.md` の進捗テーブルを更新する（完了Dayを ✅、次のDayを ⬜ 未着手 → 表示）
+7. 以下のコマンドでコミットする（必ず実行すること）：
    ```
    git add lessons/dayNN/ progress.md README.md MEMORY.md
    git commit -m "Day NN: [Vimテーマ] × [Bashテーマ]"
    ```
 
+> **注意**: `dev-learning-logs` への書き込み・コミットは、ユーザーが演習を終わらせたと報告したタイミングで行う。レッスン生成時には実施しない。
+
 ## dev-learning-logs 連携
 
-レッスン生成と同時に `../dev-learning-logs/` にも学習ログを書くこと。
+**タイミング**: ユーザーが「課題終わった」「解答した」など演習完了を報告したあとに実施する。レッスン生成時には実施しない。
 
 ### 手順
 
