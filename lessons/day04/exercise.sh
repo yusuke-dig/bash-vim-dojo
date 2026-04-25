@@ -19,7 +19,7 @@ echo "=== Task 1 ==="
 i=1
 while [ $i -le 5 ]; do
   # YOUR CODE HERE (echo と i のインクリメントの2行)
-  echo "PLACEHOLDER_1"
+  echo "$i"
   i=$((i + 1))
 done
 
@@ -35,7 +35,7 @@ echo "=== Task 2 ==="
 n=10
 while [ $n -ge 7 ]; do
   # YOUR CODE HERE
-  echo "PLACEHOLDER_2"
+  echo "$n"
   n=$((n - 1))
 done
 
@@ -49,7 +49,7 @@ done
 echo "=== Task 3 ==="
 while read line; do
   # YOUR CODE HERE
-  echo "PLACEHOLDER_3"
+  echo "fruit: $line"
 done <<EOF
 apple
 banana
@@ -66,7 +66,7 @@ EOF
 echo "=== Task 4 ==="
 echo -e "2\n5\n3" | while read num; do
   # YOUR CODE HERE
-  echo "PLACEHOLDER_4"
+  echo "$((num * 2))"
 done
 
 # -------------------------------------------------------
@@ -80,7 +80,7 @@ echo "=== Task 5 ==="
 r=1
 while [ $r -le 3 ]; do
   # YOUR CODE HERE
-  echo "PLACEHOLDER_5"
+  echo "Round $r: start"
   r=$((r + 1))
 done
 
@@ -93,7 +93,11 @@ done
 #   3
 echo "=== Review 1 ==="
 # YOUR CODE HERE (while ループを自分で書く)
-echo "PLACEHOLDER_R1"
+i=1
+while [ $i -le 3 ]; do
+  echo "$i"
+  i=$((i + 1))
+done
 
 # -------------------------------------------------------
 # Review 2: read + while でリストを読み、各行の先頭に ">> " をつけて表示する
@@ -105,7 +109,7 @@ echo "PLACEHOLDER_R1"
 echo "=== Review 2 ==="
 while read line; do
   # YOUR CODE HERE
-  echo "PLACEHOLDER_R2"
+  echo ">> $line"
 done <<EOF
 foo
 bar
@@ -123,4 +127,8 @@ EOF
 #   8
 echo "=== Review 3 ==="
 # YOUR CODE HERE (while ループを自分で書く)
-echo "PLACEHOLDER_R3"
+i=0
+while [ $i -le 8 ]; do
+  echo "$i"
+  i=$((i + 2))
+done
