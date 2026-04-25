@@ -10,7 +10,7 @@
 | Day 01 | Vim移動 × Bash変数・echo | ✅ 完了 (2026-04-19) |
 | Day 02 | Vim挿入・削除 × Bashのif文 | ✅ 完了 (2026-04-20) |
 | Day 03 | Vim検索（/, n, N, *） × Bashのfor文・seq | ✅ 完了 (2026-04-21) |
-| Day 04 | Vim置換（:s/old/new/g） × Bashのwhile文・read | ✅ 完了 (2026-04-24) |
+| Day 04 | Vim置換（:s/old/new/g） × Bashのwhile文・read | ✅ 完了 (2026-04-25) |
 | Day 05 | Vimヤンク・ペースト（y, p, yy） × Bash関数 | ⬜ 未着手 |
 
 次に作るのは **Day 05: Vimヤンク・ペースト（y, p, yy） × Bash関数**。
