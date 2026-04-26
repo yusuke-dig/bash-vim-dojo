@@ -14,7 +14,7 @@
 echo "=== Task 1 ==="
 greet() {
   # YOUR CODE HERE
-  :
+echo "Hello, World!" 
 }
 greet
 
@@ -25,7 +25,7 @@ greet
 echo "=== Task 2 ==="
 hello() {
   # YOUR CODE HERE ($1 を使う)
-  :
+  echo "Hello, $1!" 
 }
 hello "Alice"
 
@@ -37,7 +37,7 @@ hello "Alice"
 echo "=== Task 3 ==="
 calc() {
   # YOUR CODE HERE (local result を使う)
-  :
+  echo "Result: $(($1 + $2))"  
 }
 calc 3 4
 
@@ -51,11 +51,11 @@ calc 3 4
 echo "=== Task 4 ==="
 say_hello() {
   # YOUR CODE HERE
-  :
+  echo "Good morning!" 
 }
 say_bye() {
   # YOUR CODE HERE
-  :
+  echo "Good night!" 
 }
 say_hello
 say_bye
@@ -68,7 +68,7 @@ say_bye
 echo "=== Task 5 ==="
 double() {
   # YOUR CODE HERE (echo $(($1 * 2)) のように echo で返す)
-  :
+  echo $(($1 * 2))  
 }
 val=$(double 5)
 echo "$val"
