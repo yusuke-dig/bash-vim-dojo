@@ -53,9 +53,3 @@ p
 4. `:w` で保存、ターミナルで `bash test.sh` で採点
 5. Review タスクでは `yy/p` を実際に使って Task 2 の `hello` 関数をコピー → 改造してみよう
 
-## 振り返り演習
-
-exercise.sh の後半（Review 1〜3）を参照。
-- **Review 1**: `max` 関数 — 2引数を比較して大きい方を表示
-- **Review 2**: `count_up` 関数 — ループを含む関数（既習の while を活用）
-- **Review 3**: `greet_upper` 関数 — `hello` を `yy/p` でコピーして `tr` で大文字変換に改造

@@ -42,17 +42,5 @@ check "Task 4: 複数関数" "Good morning!|Good night!" "$task4"
 task5=$(echo "$output" | grep -A 1 "=== Task 5 ===" | grep -v "===" | grep -v '^#' | head -1)
 check "Task 5: 関数の戻り値" "10" "$task5"
 
-# Review 1: Max: 8
-r1=$(echo "$output" | grep -A 1 "=== Review 1 ===" | grep -v "===" | grep -v '^#' | head -1)
-check "Review 1: max 関数" "Max: 8" "$r1"
-
-# Review 2: 1 2 3
-r2=$(echo "$output" | grep -A 3 "=== Review 2 ===" | grep -v "===" | grep -v '^#' | head -3 | tr '\n' ' ' | sed 's/ $//')
-check "Review 2: count_up 関数" "1 2 3" "$r2"
-
-# Review 3: HELLO, BOB!
-r3=$(echo "$output" | grep -A 1 "=== Review 3 ===" | grep -v "===" | grep -v '^#' | head -1)
-check "Review 3: greet_upper" "HELLO, BOB!" "$r3"
-
 echo ""
 echo "Result: $PASS/$((PASS + FAIL)) passed"
