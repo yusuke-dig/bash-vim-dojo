@@ -14,6 +14,7 @@
 echo "=== Task 1 ==="
 colors=(red green blue)
 # YOUR CODE HERE
+echo ${colors[1]}
 
 # -------------------------------------------------------
 # Task 2: fruits 配列の全要素を1行ずつ表示する
@@ -26,6 +27,9 @@ colors=(red green blue)
 echo "=== Task 2 ==="
 fruits=(apple banana cherry)
 # YOUR CODE HERE: for ループで回す
+for fruit in "${fruits[@]}"; do
+  echo "${fruit}"
+done
 
 # -------------------------------------------------------
 # Task 3: nums 配列の要素数を表示する
@@ -35,6 +39,7 @@ fruits=(apple banana cherry)
 echo "=== Task 3 ==="
 nums=(10 20 30 40 50)
 # YOUR CODE HERE
+echo "${#nums[@]}"
 
 # -------------------------------------------------------
 # Task 4: pets 配列に bird を追加して全要素をスペース区切りで表示する
@@ -44,6 +49,8 @@ nums=(10 20 30 40 50)
 echo "=== Task 4 ==="
 pets=(cat dog)
 # YOUR CODE HERE: pets+=(...) で追加してから echo "${pets[@]}"
+pets+=("bird")
+echo "${pets[@]}"
 
 # -------------------------------------------------------
 # Task 5: scores 配列から 70 以上の要素だけを1行ずつ表示する
@@ -56,3 +63,8 @@ pets=(cat dog)
 echo "=== Task 5 ==="
 scores=(85 42 90 60 78)
 # YOUR CODE HERE: for ループ + if で条件判定
+for score in "${scores[@]}" ; do
+  if [ ${score} -ge 70 ]; then
+     echo "${score}"
+  fi
+done 
