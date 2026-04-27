@@ -24,6 +24,7 @@ bash lessons/day01/test.sh
 | 03 | 2026-04-21 | Vim検索（/, n, N, *） × Bashのfor文・seq |
 | 04 | 2026-04-25 | Vim置換（:s/old/new/g） × Bashのwhile文・read |
 | 05 | 2026-04-25 | Vimヤンク・ペースト（y, p, yy） × Bash関数 |
+| 06 | 2026-04-27 | Vimビジュアルモード（v, V, Ctrl-v） × Bash配列 |
 
 ## カリキュラム
 
