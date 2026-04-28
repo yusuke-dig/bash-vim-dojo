@@ -13,9 +13,10 @@
 | Day 04 | Vim置換（:s/old/new/g） × Bashのwhile文・read | ✅ 完了 (2026-04-25) |
 | Day 05 | Vimヤンク・ペースト（y, p, yy） × Bash関数 | ✅ 完了 (2026-04-25) |
 | Day 06 | Vimビジュアルモード（v, V, Ctrl-v） × Bash配列 | ✅ 完了 (2026-04-27) |
-| Day 07 | Vimウィンドウ分割（:sp, :vsp） × Bashパイプ・リダイレクト | ⬜ 未着手 |
+| Day 07 | Vimウィンドウ分割（:sp, :vsp） × Bashパイプ・リダイレクト | ✅ 完了 (2026-04-28) |
+| Day 08 | Vimマクロ（q, @） × Bashのgrep・正規表現 | ⬜ 未着手 |
 
-次に作るのは **Day 07: Vimウィンドウ分割（:sp, :vsp） × Bashパイプ・リダイレクト**。
+次に作るのは **Day 08: Vimマクロ（q, @） × Bashのgrep・正規表現**。
 
 ## 関連ディレクトリ・ファイル
 - レッスン: `lessons/dayNN/`
