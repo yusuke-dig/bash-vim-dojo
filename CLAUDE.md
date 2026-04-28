@@ -29,13 +29,16 @@
 
 ## 演習完了時のコミット手順
 
-ユーザーが演習完了を報告したら、以下をすべてコミットすること（漏れに注意）：
+ユーザーが演習完了を報告したら、**必ず以下をすべて実施してからユーザーに完了を伝えること**。途中で止まらない。
 
-1. `lessons/dayNN/exercise.sh` — 解答済みファイル
-2. `../dev-learning-logs/logs/bash-vim/YYYY-MM-DD.md` — 学習ログ（日付は当日）
-3. `../dev-learning-logs/README.md` — ログ一覧への追記
+### チェックリスト（この順番で実施）
 
-コミット前に `git status` で未コミットファイルがないか必ず確認すること。
+- [ ] 1. `lessons/dayNN/exercise.sh` を bash-vim-dojo リポジトリにコミット
+- [ ] 2. `../dev-learning-logs/logs/bash-vim/YYYY-MM-DD.md` を作成
+- [ ] 3. `../dev-learning-logs/README.md` に1行追記
+- [ ] 4. dev-learning-logs リポジトリにコミット
+
+> **重要**: テスト結果を確認した直後にチェックリストをすべて実行すること。ユーザーの追加メッセージを待たずに実施する。
 
 ## dev-learning-logs 連携
 
