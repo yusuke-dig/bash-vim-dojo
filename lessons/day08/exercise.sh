@@ -10,24 +10,23 @@
 fruits=("apple" "banana" "mango" "orange" "grape" "melon")
 
 # YOUR CODE HERE (1行で書く)
-
+printf "%s\n" "${fruits[@]}" | grep "an" > result1.txt
 
 # ===== Task 2: grep -v でコメント除外 =====
 # この exercise.sh からコメント行（# で始まる行）を除いた行数を数えて
 # 変数 non_comment_lines に代入してください。
-# ヒント: grep -v "^#" lessons/day08/exercise.sh | grep -v "^$" | wc -l
+# ヒント: non_comment_lines=$(grep -v "^#" exercise.sh | grep -v "^$" | wc -l)
 
 # YOUR CODE HERE
-non_comment_lines=0
-
+non_comment_lines=$(grep -v "^#" exercise.sh | grep -v "^$" | wc -l)
 
 # ===== Task 3: grep -n で行番号付き検索 =====
 # この exercise.sh で "Task" という文字列が含まれる行を
 # 行番号付きで result3.txt に保存してください。
-# ヒント: grep -n "Task" lessons/day08/exercise.sh > result3.txt
+# ヒント: grep -n "Task" exercise.sh > result3.txt
 
 # YOUR CODE HERE
-
+grep -n "Task" exercise.sh > result3.txt
 
 # ===== Task 4: grep -E で複数パターン =====
 # 下の words 配列から "cat" または "dog" を含む単語を抽出して
@@ -37,7 +36,7 @@ non_comment_lines=0
 words=("catalog" "category" "dogma" "doctor" "catalog" "dodgeball" "catfish")
 
 # YOUR CODE HERE
-
+printf "%s\n" "${words[@]}" | grep -E "cat|dog" > result4.txt
 
 # ===== Task 5: grep で正規表現 =====
 # 下の data から数字3桁以上を含む行だけを抽出して
@@ -51,3 +50,4 @@ date: 8
 elderberry: 300"
 
 # YOUR CODE HERE
+echo "$data" | grep -E "[0-9]{3}" > result5.txt

@@ -40,8 +40,12 @@ else
 fi
 
 # Task 2: コメント行以外の行数が non_comment_lines に入っているか
-source <(grep -v "^#" exercise.sh | grep -v "^$")
-if [ "$non_comment_lines" -gt 0 ] 2>/dev/null; then
+# source <(...) は macOS の bash スクリプト内で変数を伝達しないため temp ファイルを使う
+_tmp=$(mktemp)
+grep -v "^#" exercise.sh | grep -v "^$" > "$_tmp"
+source "$_tmp"
+rm -f "$_tmp"
+if [ "${non_comment_lines:-0}" -gt 0 ] 2>/dev/null; then
     check "Task 2: grep -v でコメント除外した行数を取得" "ok"
 else
     check "Task 2: grep -v でコメント除外した行数を取得 (0 または未設定)" "fail"
