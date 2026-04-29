@@ -23,7 +23,8 @@
       "Bash(cd *)",
       "Bash(cat *)",
       "Bash(pwd)",
-      "Bash(echo *)"
+      "Bash(echo *)",
+      "Bash(-c *)"
     ],
     "deny": [
       "Bash(rm -rf *)"
