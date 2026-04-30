@@ -27,6 +27,7 @@ bash lessons/day01/test.sh
 | 06 | 2026-04-27 | Vimビジュアルモード（v, V, Ctrl-v） × Bash配列 |
 | 07 | 2026-04-28 | Vimウィンドウ分割（:sp, :vsp） × Bashパイプ・リダイレクト |
 | 08 | 2026-04-29 | Vimマクロ（q, @） × Bashのgrep・正規表現 |
+| 09 | 2026-04-30 | Vim :! でシェル実行 × Bashファイル操作（cp, mv, find） |
 
 ## カリキュラム
 
