@@ -26,8 +26,9 @@ rm -f result_find.txt result_count.txt result_upper.txt
 rm -rf work
 bash exercise.sh > /dev/null 2>&1
 
-# Task 1: work/backup.txt が存在するか
-if [ -f "work/backup.txt" ]; then
+# Task 1: cp なので original.txt が残っていること + renamed.txt に内容が引き継がれていること
+# (backup.txt は Task 2 の mv で renamed.txt に移動されるため、最終的には存在しない)
+if [ -f "work/original.txt" ] && [ -f "work/renamed.txt" ]; then
     check "Task 1: original.txt を backup.txt としてコピー" "ok"
 else
     check "Task 1: original.txt を backup.txt としてコピー" "fail"
