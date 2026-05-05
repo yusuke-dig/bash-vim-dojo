@@ -21,19 +21,24 @@ EOF
 # Task 1: awk で data.txt から名前（$1）だけを抽出して result_task1.txt に保存する
 # ヒント: awk '{print $1}' data.txt > result_task1.txt
 # YOUR CODE HERE
+awk '{print $1}' data.txt > result_task1.txt
 
 # Task 2: awk で点数（$2）が70以上の行全体を result_task2.txt に保存する
 # ヒント: awk '$2 >= 70' data.txt > result_task2.txt
 # YOUR CODE HERE
+awk '$2 >=70' data.txt > result_task2.txt
 
 # Task 3: awk で点数（$2）の合計を result_task3.txt に保存する
 # ヒント: awk '{sum += $2} END {print sum}' data.txt > result_task3.txt
 # YOUR CODE HERE
+awk '{sum += $2} END {print sum}' data.txt > result_task3.txt
 
 # Task 4: awk で "名前: 点数" 形式に整形して result_task4.txt に保存する
 # ヒント: awk '{print $1": "$2}' data.txt > result_task4.txt
 # YOUR CODE HERE
+awk '{print $1": "$2}' data.txt > result_task4.txt
 
 # Task 5: awk で都市（$3）が "Tokyo" の行の名前（$1）を result_task5.txt に保存する
 # ヒント: awk '$3 == "Tokyo" {print $1}' data.txt > result_task5.txt
 # YOUR CODE HERE
+awk '$3 == "Tokyo" {print $1}' data.txt > result_task5.txt
