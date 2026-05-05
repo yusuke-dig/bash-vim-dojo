@@ -1,0 +1,5 @@
+Alice 85 Tokyo
+Bob 62 Osaka
+Carol 91 Tokyo
+Dave 47 Nagoya
+Eve 78 Osaka
