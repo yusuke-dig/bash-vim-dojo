@@ -17,6 +17,7 @@
 
 echo "--- Task 1 ---"
 # YOUR CODE HERE
+echo "apple banana cherry" | xargs -n 1 echo
 
 
 # =============================================================
@@ -33,6 +34,7 @@ echo "--- Task 1 ---"
 
 echo "--- Task 2 ---"
 # YOUR CODE HERE
+echo "cat dog bird" | xargs -n 1 -I {} echo "Animal: {}"
 
 
 # =============================================================
@@ -46,6 +48,7 @@ echo "--- Task 2 ---"
 
 echo "--- Task 3 ---"
 # YOUR CODE HERE
+find . -name "*.sh" | xargs -I {} echo "Script: {}"
 
 
 # =============================================================
@@ -62,6 +65,7 @@ echo -e "status: ok\nstatus: error" > /tmp/day14_a.txt
 echo -e "result: ok\nresult: fail" > /tmp/day14_b.txt
 
 # YOUR CODE HERE
+echo "/tmp/day14_a.txt /tmp/day14_b.txt" | xargs grep "ok"
 
 
 # =============================================================
@@ -78,3 +82,4 @@ echo -e "result: ok\nresult: fail" > /tmp/day14_b.txt
 
 echo "--- Task 5 ---"
 # YOUR CODE HERE
+cat /tmp/day14_a.txt /tmp/day14_b.txt | grep "ok" | xargs -I {} echo "[FOUND] {}"
