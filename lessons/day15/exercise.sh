@@ -18,6 +18,7 @@ echo "--- Task 1 ---"
 
 show_section() {
     # YOUR CODE HERE
+  echo "=== $1 ==="
 }
 
 show_section "START"
@@ -37,6 +38,9 @@ sum_numbers() {
     local n=$1
     local total=0
     # YOUR CODE HERE
+    for i in $(seq 1 $n); do
+      total=$((total + i));
+    done
     echo "$total"
 }
 
@@ -57,6 +61,7 @@ log_message() {
     local level=$1
     local msg=$2
     # YOUR CODE HERE
+    echo "[$level] $msg"
 }
 
 log_message "INFO" "処理開始"
@@ -77,6 +82,11 @@ echo "--- Task 4 ---"
 check_file() {
     local path=$1
     # YOUR CODE HERE
+    if [ -f "$path" ]; then
+      echo "EXISTS: $path"
+    else
+      echo "MISSING: $path"
+    fi
 }
 
 touch /tmp/day15_exists.txt
@@ -107,6 +117,7 @@ process_items() {
 
 main() {
     # YOUR CODE HERE
+    process_items "alpha" "beta" "gamma"
 }
 
 main
