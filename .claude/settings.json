@@ -18,6 +18,7 @@
       "Bash(git add *)",
       "Bash(git commit *)",
       "Bash(bash lessons/*)",
+      "Bash(bash /Users/yusukeyokota/workspace/bash-vim-dojo/lessons/*)",
       "Bash(ls *)",
       "Bash(ls -la *)",
       "Bash(cd *)",
