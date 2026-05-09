@@ -11,6 +11,7 @@
 # ヒント: bash -n ファイル名 2>/dev/null && echo "SYNTAX OK"
 echo "--- Task 1 ---"
 # YOUR CODE HERE
+bash -n correct.sh && echo "SYNTAX OK"
 
 # ===================================================
 # Task 2: source して関数を呼び出す
@@ -19,6 +20,7 @@ echo "--- Task 1 ---"
 # ヒント: source correct.sh; double_num 7
 echo "--- Task 2 ---"
 # YOUR CODE HERE
+source correct.sh; double_num 7
 
 # ===================================================
 # Task 3: 算術演算のバグを修正する
@@ -28,7 +30,7 @@ echo "--- Task 2 ---"
 echo "--- Task 3 ---"
 triple_num() {
   local n=$1
-  echo $n * 3
+  echo $((n * 3))
 }
 triple_num 4
 
@@ -40,7 +42,7 @@ triple_num 4
 echo "--- Task 4 ---"
 file_check() {
   local f=$1
-  if [ -d "$f" ]; then
+  if [ -f "$f" ]; then
     echo "FOUND: $f"
   else
     echo "NOT_FOUND: $f"
@@ -60,7 +62,7 @@ sum_to_n() {
   local max=$1
   local total=0
   for i in $(seq 1 "$max"); do
-    total=$total + $i
+    total=$((total + i))
   done
   echo "$total"
 }
