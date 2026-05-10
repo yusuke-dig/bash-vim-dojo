@@ -6,3 +6,7 @@
 # 例: to_upper "bash" → "BASH"
 # ヒント: echo "$1" | tr '[:lower:]' '[:upper:]' を使う
 # YOUR CODE HERE
+
+function to_upper() {
+  echo "$1" | tr '[:lower:]' '[:upper:]'
+}
