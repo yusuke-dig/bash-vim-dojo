@@ -24,9 +24,10 @@
 | Day 15 | 折りたたみ（za, zc, zo） × 長いスクリプトの構造化 | ✅ 完了 (2026-05-07) |
 | Day 16 | Vimdiff × スクリプトのデバッグ | ✅ 完了 (2026-05-08) |
 | Day 17 | ctags / タグジャンプ × 関数の整理・モジュール化 | ✅ 完了 (2026-05-10) |
-| Day 18 | quickfix・:make × シェルスクリプトのlint（shellcheck） | ⬜ 未着手 |
+| Day 18 | quickfix・:make × シェルスクリプトのlint（shellcheck） | ✅ 完了 (2026-05-11) |
+| Day 19 | 正規表現（very magic） × sed応用・複雑なパターン | ⬜ 未着手 |
 
-次に作るのは **Day 18: quickfix・:make × シェルスクリプトのlint（shellcheck）**。
+次に作るのは **Day 19: 正規表現（very magic） × sed応用・複雑なパターン**。
 
 ## 関連ディレクトリ・ファイル
 - レッスン: `lessons/dayNN/`
