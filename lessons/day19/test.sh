@@ -29,9 +29,11 @@ else
 fi
 
 # Task 3: EXIT_CODE 変数が 0 以外（エラーが発生したコマンド）
-# exercise.sh を source して EXIT_CODE を取得
 unset EXIT_CODE
-source <(grep -A2 'Task 3' exercise.sh | grep -v '^#')
+_tmp=$(mktemp)
+sed -n '/# ===== Task 3/,/# ===== Task 4/p' exercise.sh | grep -v '^#' > "$_tmp"
+source "$_tmp"
+rm -f "$_tmp"
 if [[ -n "$EXIT_CODE" ]] && [[ "$EXIT_CODE" -ne 0 ]]; then
   ok "Task 3: EXIT_CODE=$EXIT_CODE（エラーを捨てて終了コードを取得できている）"
 else

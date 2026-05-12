@@ -7,12 +7,14 @@
 # "Hello, redirect!" という文字列を output.txt に書き込め
 
 # YOUR CODE HERE
+echo "Hello, redirect!" > output.txt
 
 # ===== Task 2: 追記モードでファイルに書き足す =====
 # ヒント: >> を使う（> だと上書きになるので注意）
 # "Appended line" という文字列を output.txt に追記せよ
 
 # YOUR CODE HERE
+echo "Appended line" >> output.txt
 
 # ===== Task 3: エラーを /dev/null に捨てる =====
 # ヒント: 存在しないファイルを cat すると標準エラーが出る
@@ -20,6 +22,7 @@
 # 例: some_cmd 2>/dev/null; EXIT_CODE=$?
 
 # YOUR CODE HERE
+cat no_such_file.txt 2>/dev/null; EXIT_CODE=$?
 
 # ===== Task 4: 標準出力とエラーを同じファイルへ =====
 # ヒント: > file 2>&1 または &> file を使う
@@ -27,6 +30,7 @@
 # 例: (ls -la; cat no_such_file.txt) > file 2>&1
 
 # YOUR CODE HERE
+(ls -la; cat no_such_file.txt) &> all.log
 
 # ===== Task 5: 標準出力とエラーを別々のファイルへ =====
 # ヒント: > out.log 2> err.log のように別々にリダイレクトする
@@ -34,3 +38,4 @@
 # 標準出力は out.log へ、標準エラーは err.log へそれぞれ書き込め
 
 # YOUR CODE HERE
+(echo "stdout msg"; echo "stderr msg" >&2) > out.log 2> err.log
