@@ -39,6 +39,7 @@ bash lessons/day01/test.sh
 | 18 | 2026-05-11 | :make でMakefileターゲット実行 × Makefile基礎 |
 | 19 | 2026-05-12 | Vim で YAML/設定ファイル編集 × リダイレクト完全理解 |
 | 20 | 2026-05-14 | 復習Day × Phase 2 総合演習 |
+| 21 | 2026-05-15 | 終了コードとエラーハンドリング（$? / set -e / set -o pipefail） |
 
 ## カリキュラム
 
