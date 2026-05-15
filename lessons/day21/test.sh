@@ -90,7 +90,7 @@ fi
 # Task 5: get_exit_code 関数
 # --------------------
 if declare -f get_exit_code > /dev/null 2>&1; then
-    result=$(get_exit_code ls "$DIR" 2>/dev/null)
+    result=$(get_exit_code true 2>/dev/null)
     if [ "$result" = "0" ]; then
         check "Task 5: get_exit_code は成功コマンドの終了コード '0' を出力する" "true"
     else

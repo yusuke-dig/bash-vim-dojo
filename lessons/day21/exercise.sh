@@ -10,7 +10,7 @@
 # ヒント: ls /no_such_path_xyz 2>/dev/null の後、exit_code=$? と書く
 
 # YOUR CODE HERE
-
+ls /no_such_path_xyz 2>dev/null; exit_code=$?
 
 # ============================
 # Task 2: check_file 関数を定義する
@@ -20,6 +20,11 @@
 
 check_file() {
     # YOUR CODE HERE
+    if [ -f "$1" ]; then
+      return 0
+    else
+      return 1
+    fi
 }
 
 
@@ -31,6 +36,8 @@ check_file() {
 
 safe_mkdir() {
     # YOUR CODE HERE
+    mkdir "$1"; local code=$?
+    [ $code -ne 0 ] && echo "作成失敗: $1" && return 1
 }
 
 
@@ -42,6 +49,13 @@ safe_mkdir() {
 
 run_with_check() {
     # YOUR CODE HERE
+    "$@"
+    local code=$?
+    if [ $code -ne 0 ]; then
+      echo "コマンド失敗 (終了コード: $code)" && return 1
+    else
+      return 0
+    fi
 }
 
 
@@ -53,4 +67,7 @@ run_with_check() {
 
 get_exit_code() {
     # YOUR CODE HERE
+    "$@"
+    local code=$?
+    echo "$code"
 }
